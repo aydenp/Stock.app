@@ -70,7 +70,7 @@ class ShutterstockService: StockPhotoService {
     }
     
     func search(with query: String, count: Int, after paginationToken: String?, completion: @escaping (Result<StockPhotoResults, Error>) -> Void) -> StockPhotoSearchRequest? {
-        var components = URLComponents(string: "https://www.shutterstock.com/sstk/api/footage/images/search?allow_inject=true&fields%5Bimages%5D=displays&fields%5Bimages%5D=alt&filter%5Bimage_type%5D=photo")!
+        var components = URLComponents(string: "https://www.shutterstock.com/studioapi/images/search?allow_inject=true&fields%5Bimages%5D=displays&fields%5Bimages%5D=alt&filter%5Bimage_type%5D=photo")!
         var queryItems = components.queryItems ?? []
         queryItems.append(URLQueryItem(name: "q", value: query))
         if let number = paginationToken { queryItems.append(URLQueryItem(name: "page[number]", value: number)) }
