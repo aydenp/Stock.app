@@ -22,16 +22,22 @@ class HeaderInputBar: UIStackView {
         translatesAutoresizingMaskIntoConstraints = false
         isLayoutMarginsRelativeArrangement = true
         
-        heightAnchor.constraint(equalToConstant: 62).isActive = true
-        layoutMargins = UIEdgeInsets(horizontal: 8, vertical: 0)
+        if #available(iOS 13.0, *) {
+            // On iOS 13, there's no hairline for iMessage apps, so don't add as much top margin to look better
+            layoutMargins = UIEdgeInsets(top: 4, left: 8, bottom: 12, right: 8)
+        } else {
+            layoutMargins = UIEdgeInsets(horizontal: 8, vertical: 12)
+        }
         
         searchBar.searchBarStyle = .minimal
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
         searchBar.placeholder = "Search stock photos"
         searchBar.delegate = self
         searchBar.autocorrectionType = .yes
         searchBar.enablesReturnKeyAutomatically = false
+        searchBar.heightAnchor.constraint(equalToConstant: 36).isActive = true
         
-        settingsButton.setImage(#imageLiteral(resourceName: "Settings"), for: .normal)
+        settingsButton.setImage(UIImage(named: "Settings"), for: .normal)
         settingsButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 4)
         
         addArrangedSubview(searchBar)

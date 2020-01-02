@@ -18,7 +18,7 @@ class MessagesViewController: MSMessagesAppViewController {
         super.viewDidLoad()
         
         setupPresentationStyleManager()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "background")
         
         // Keyboard avoidance
         updateSafeAreaKeyboardInset()
@@ -45,7 +45,12 @@ class MessagesViewController: MSMessagesAppViewController {
     
     @objc func settingsTapped() {
         let viewController = ExpansionEnforcingNavigationController(rootViewController: SettingsViewController())
-        viewController.modalPresentationStyle = .formSheet
+        // On iOS 13 phones, form sheet looks weird (a sheet nested inside... another sheet), so use full screen instead
+        viewController.modalPresentationStyle = UIDevice.current.userInterfaceIdiom == .phone ? .fullScreen : .formSheet
+        if #available(iOS 13.0, *) {
+            viewController.isModalInPresentation = true
+        }
+        
         present(viewController, animated: true, completion: nil)
     }
     

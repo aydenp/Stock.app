@@ -13,15 +13,23 @@ class ExpansionEnforcingNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationBar.isTranslucent = false
-        navigationBar.shadowImage = UIImage()
         
-        let hairlineView = HairlineView()
-        hairlineView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(hairlineView)
-        hairlineView.pinToSuperview(edges: [.left, .right])
-        hairlineView.pin(edges: .bottom, to: navigationBar)
+        if #available(iOS 13.0, *) {
+            // Don't do anything special to the navbar, Apple got rid of the inconsistently coloured hairline
+            // Just make it match the Apple header
+            navigationBar.barTintColor = UIColor(named: "background")
+        } else {
+            navigationBar.shadowImage = UIImage()
+
+            // Setup new hairline with more consistent colour with Messages-provided one
+            let navbarBottomHairlineView = HairlineView()
+            navbarBottomHairlineView.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(navbarBottomHairlineView)
+            navbarBottomHairlineView.pin(edges: .bottom, to: navigationBar)
+            navbarBottomHairlineView.pinToSuperview(edges: [.left, .right])
+        }
         
         presentationStyleChangeToken = PresentationStyleManager.shared.onWillChange(to: .compact) { self.dismiss(animated: true, completion: nil) }
     }

@@ -17,7 +17,7 @@ class HairlineView: UIView {
         heightConstraint = heightAnchor.constraint(equalToConstant: 1)
         heightConstraint.isActive = true
         
-        backgroundColor = UIColor(white: 0.831, alpha: 1)
+        backgroundColor = UIColor(named: "defaultHairline")
     }
     
     required init?(coder aDecoder: NSCoder) {

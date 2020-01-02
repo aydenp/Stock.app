@@ -16,7 +16,7 @@ class StockPhotoCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.backgroundColor = UIColor(white: 0.8, alpha: 1)
+        imageView.backgroundColor = UIColor(named: "imagePlaceholder")
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         contentView.addSubview(imageView)
@@ -45,7 +45,7 @@ class StockPhotoCollectionViewCell: UICollectionViewCell {
             DispatchQueue.main.async {
                 if self.isDownloadingFullImage {
                     let downloadIndicatorView = UIView()
-                    downloadIndicatorView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+                    downloadIndicatorView.backgroundColor = UIColor(named: "downloadIndicatorOverlay")
                     downloadIndicatorView.translatesAutoresizingMaskIntoConstraints = false
                     self.contentView.addSubview(downloadIndicatorView)
                     downloadIndicatorView.pinToSuperview()

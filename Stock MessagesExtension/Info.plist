@@ -22,10 +22,10 @@
 	<string>1</string>
 	<key>NSExtension</key>
 	<dict>
-		<key>NSExtensionPrincipalClass</key>
-		<string>MessagesViewController</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.message-payload-provider</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>MessagesViewController</string>
 	</dict>
 </dict>
 </plist>
