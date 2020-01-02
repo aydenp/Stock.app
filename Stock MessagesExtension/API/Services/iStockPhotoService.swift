@@ -17,14 +17,13 @@ class iStockPhotoService: StockPhotoService {
         let page: Int, lastPage: Int
         
         struct Image: Codable {
-            let thumbUrl: String
-            let previewUrl: String
+            let thumbUrl: URL
+            let previewUrl: String?
             let caption: String?
 
             var stockPhoto: StockPhoto {
-                let previewUrlNoQuery = previewUrl.firstIndex(of: "?").map { String(previewUrl[previewUrl.startIndex..<$0]) } ?? previewUrl
-                let thumbnailURL = URL(string: thumbUrl)!
-                return StockPhoto(thumbnailURL: thumbnailURL, fullImageURL: URL(string: previewUrlNoQuery)!, alternativeText: caption)
+                let previewUrlNoQuery = previewUrl?.firstIndex(of: "?").map { String(previewUrl![previewUrl!.startIndex..<$0]) }.flatMap { URL(string: $0) }
+                return StockPhoto(thumbnailURL: thumbUrl, fullImageURL: previewUrlNoQuery ?? thumbUrl, alternativeText: caption)
             }
         }
         

@@ -32,7 +32,7 @@ class AttachmentDownloader {
             do {
                 // Messages ignores our alternate filename (its a bug since iOS 10) so we're going to move it to our temporary directory with a better filename so it doesn't think its some random other filetype yay extra code
                 let fileExtension = try self.findAppropriateFileExtensionForFile(at: fileURL)
-                let betterFileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(UUID().uuidString)-\(photo.fullImageURL.lastPathComponent)\(try fileExtension)")
+                let betterFileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(UUID().uuidString)-\(photo.fullImageURL.lastPathComponent)\(fileExtension)")
             
                 try FileManager.default.moveItem(at: fileURL, to: betterFileURL)
                 completion(.success(Attachment(fileURL: betterFileURL)))
