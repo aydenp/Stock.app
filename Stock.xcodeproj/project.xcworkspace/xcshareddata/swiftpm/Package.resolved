@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "StockKit",
+        "repositoryURL": "git@github.com:aydenp/StockKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "570e16655d4245107182ce2ee11670532efb65cf",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

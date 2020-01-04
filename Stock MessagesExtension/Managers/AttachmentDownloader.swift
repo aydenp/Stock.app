@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import StockKit
 
 class AttachmentDownloader {
     weak var delegate: AttachmentDownloaderDelegate?

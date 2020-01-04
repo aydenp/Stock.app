@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StockKit
 
 private let reuseIdentifier = "Cell", buttonReuseIdentifier = "ButtonCell"
 

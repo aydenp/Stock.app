@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import StockKit
 
 class PersistentStockPhotoStore {
     static let favourites = PersistentStockPhotoStore(name: "Favourites"), recents = PersistentStockPhotoStore(name: "Recents", limit: 30)

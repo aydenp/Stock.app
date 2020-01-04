@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StockKit
 
 class StockPhotoCollectionViewController: UICollectionViewController {
     static let reuseIdentifier = "Cell", titledHeaderReuseIdentifier = "TitledHeader"

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StockKit
 
 class NoQueryViewController: StockPhotoCollectionViewController {
     private var noItemsMessageView: MessageView!

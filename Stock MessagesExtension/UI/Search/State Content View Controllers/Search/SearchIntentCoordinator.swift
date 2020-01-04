@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import StockKit
 
 class SearchIntentCoordinator {
     weak var delegate: SearchIntentCoordinatorDelegate?

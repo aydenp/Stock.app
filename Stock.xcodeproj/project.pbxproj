@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C32BE83322E4475F0042878B /* AdobeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32BE83222E4475F0042878B /* AdobeService.swift */; };
+		C32676B423C0FF3A00A238E1 /* PersistentStockPhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32676B223C0FEF400A238E1 /* PersistentStockPhotoStore.swift */; };
+		C32676B723C1014E00A238E1 /* StockKit in Frameworks */ = {isa = PBXBuildFile; productRef = C32676B623C1014E00A238E1 /* StockKit */; };
 		C32BE83722E44B6D0042878B /* ExpansionEnforcingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32BE83622E44B6A0042878B /* ExpansionEnforcingNavigationController.swift */; };
 		C3325B0022E410AE00866AC3 /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325AFE22E4109200866AC3 /* SearchCollectionViewController.swift */; };
 		C3325B0122E410B000866AC3 /* StockPhotoCollectionViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325AFF22E4109200866AC3 /* StockPhotoCollectionViewControllerLayout.swift */; };
@@ -16,22 +17,16 @@
 		C3325B1622E424BD00866AC3 /* NoQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325B1522E424BD00866AC3 /* NoQueryViewController.swift */; };
 		C3325B1822E424F200866AC3 /* SearchIntentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325B1722E424F200866AC3 /* SearchIntentCoordinator.swift */; };
 		C3325B1B22E4251F00866AC3 /* AttachmentDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325B1A22E4251F00866AC3 /* AttachmentDownloader.swift */; };
-		C3325B1E22E42A4100866AC3 /* StockPhotoSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325B1D22E42A4100866AC3 /* StockPhotoSearchManager.swift */; };
-		C3325B2022E42C1D00866AC3 /* BigstockPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325B1F22E42C1D00866AC3 /* BigstockPhotoService.swift */; };
-		C3325B2222E42C2600866AC3 /* ShutterstockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325B2122E42C2600866AC3 /* ShutterstockService.swift */; };
-		C3325B2422E438A400866AC3 /* iStockPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325B2322E438A400866AC3 /* iStockPhotoService.swift */; };
 		C37ED88022E2793100966595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37ED87F22E2793100966595 /* Assets.xcassets */; };
 		C37ED88722E2793100966595 /* Stock MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C37ED88622E2793100966595 /* Stock MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C37ED88C22E2793100966595 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37ED88B22E2793100966595 /* Messages.framework */; };
 		C37ED88F22E2793100966595 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ED88E22E2793100966595 /* MessagesViewController.swift */; };
 		C37ED89422E2793200966595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37ED89322E2793200966595 /* Assets.xcassets */; };
-		C37ED8A022E28B4400966595 /* StockPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ED89F22E28B4400966595 /* StockPhotoService.swift */; };
 		C37ED8A222E2A79500966595 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ED8A122E2A79500966595 /* HeaderView.swift */; };
 		C37ED8A422E2A7BC00966595 /* HeaderInputBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ED8A322E2A7BC00966595 /* HeaderInputBar.swift */; };
 		C37ED8A622E2A8B900966595 /* UIView+PinEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37ED8A522E2A8B900966595 /* UIView+PinEdges.swift */; };
 		C3EA08DF22E2D65900F27524 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA08DE22E2D65900F27524 /* HairlineView.swift */; };
 		C3EA08E122E2D66A00F27524 /* PresentationStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA08E022E2D66A00F27524 /* PresentationStyleManager.swift */; };
-		C3EA08E322E2D6A100F27524 /* StockPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA08DA22E2D63600F27524 /* StockPhoto.swift */; };
 		C3EA08F322E2F79500F27524 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA08F222E2F79500F27524 /* MessageView.swift */; };
 		C3EA08F922E393F400F27524 /* StockPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA08F822E393F400F27524 /* StockPhotoCollectionViewCell.swift */; };
 		C3EA08FE22E3983300F27524 /* UIEdgeInsets+Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA08FD22E3983300F27524 /* UIEdgeInsets+Direction.swift */; };
@@ -39,7 +34,6 @@
 		C3EA090522E3CDDE00F27524 /* UIAlertController+ShorthandAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA090422E3CDDE00F27524 /* UIAlertController+ShorthandAlerts.swift */; };
 		C3F8403122E457A6004B011F /* StockPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8403022E457A6004B011F /* StockPhotoCollectionViewController.swift */; };
 		C3F8403622E45DB4004B011F /* StockPhotoCollectionViewSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8403522E45D60004B011F /* StockPhotoCollectionViewSectionHeader.swift */; };
-		C3F8403822E50F1F004B011F /* PersistentStockPhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8403722E50F1F004B011F /* PersistentStockPhotoStore.swift */; };
 		C3F8403B22E6AD11004B011F /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8403A22E6AD11004B011F /* ButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +48,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C32676A123C0FC8900A238E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32676B123C0FE9E00A238E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C37ED89B22E2793200966595 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,7 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C32BE83222E4475F0042878B /* AdobeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdobeService.swift; sourceTree = "<group>"; };
+		C32676B223C0FEF400A238E1 /* PersistentStockPhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStockPhotoStore.swift; sourceTree = "<group>"; };
 		C32BE83622E44B6A0042878B /* ExpansionEnforcingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionEnforcingNavigationController.swift; sourceTree = "<group>"; };
 		C3325AFE22E4109200866AC3 /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 		C3325AFF22E4109200866AC3 /* StockPhotoCollectionViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPhotoCollectionViewControllerLayout.swift; sourceTree = "<group>"; };
@@ -77,10 +91,6 @@
 		C3325B1522E424BD00866AC3 /* NoQueryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoQueryViewController.swift; sourceTree = "<group>"; };
 		C3325B1722E424F200866AC3 /* SearchIntentCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchIntentCoordinator.swift; sourceTree = "<group>"; };
 		C3325B1A22E4251F00866AC3 /* AttachmentDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentDownloader.swift; sourceTree = "<group>"; };
-		C3325B1D22E42A4100866AC3 /* StockPhotoSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPhotoSearchManager.swift; sourceTree = "<group>"; };
-		C3325B1F22E42C1D00866AC3 /* BigstockPhotoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigstockPhotoService.swift; sourceTree = "<group>"; };
-		C3325B2122E42C2600866AC3 /* ShutterstockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShutterstockService.swift; sourceTree = "<group>"; };
-		C3325B2322E438A400866AC3 /* iStockPhotoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iStockPhotoService.swift; sourceTree = "<group>"; };
 		C37ED87C22E2792F00966595 /* Stock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37ED87F22E2793100966595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C37ED88122E2793100966595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,11 +99,9 @@
 		C37ED88E22E2793100966595 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		C37ED89322E2793200966595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C37ED89522E2793200966595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C37ED89F22E28B4400966595 /* StockPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPhotoService.swift; sourceTree = "<group>"; };
 		C37ED8A122E2A79500966595 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C37ED8A322E2A7BC00966595 /* HeaderInputBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderInputBar.swift; sourceTree = "<group>"; };
 		C37ED8A522E2A8B900966595 /* UIView+PinEdges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinEdges.swift"; sourceTree = "<group>"; };
-		C3EA08DA22E2D63600F27524 /* StockPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPhoto.swift; sourceTree = "<group>"; };
 		C3EA08DE22E2D65900F27524 /* HairlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairlineView.swift; sourceTree = "<group>"; };
 		C3EA08E022E2D66A00F27524 /* PresentationStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStyleManager.swift; sourceTree = "<group>"; };
 		C3EA08F222E2F79500F27524 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
@@ -103,11 +111,18 @@
 		C3EA090422E3CDDE00F27524 /* UIAlertController+ShorthandAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+ShorthandAlerts.swift"; sourceTree = "<group>"; };
 		C3F8403022E457A6004B011F /* StockPhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		C3F8403522E45D60004B011F /* StockPhotoCollectionViewSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPhotoCollectionViewSectionHeader.swift; sourceTree = "<group>"; };
-		C3F8403722E50F1F004B011F /* PersistentStockPhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersistentStockPhotoStore.swift; path = "../../../../../../../System/Volumes/Data/Users/aydenp/Xcode Projects F/Stock/Stock MessagesExtension/API/Managers/PersistentStockPhotoStore.swift"; sourceTree = "<group>"; };
 		C3F8403A22E6AD11004B011F /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonTableViewCell.swift; path = "../../../../../../../../System/Volumes/Data/Users/aydenp/Xcode Projects F/Stock/Stock MessagesExtension/UI/Convenience/Cell/ButtonTableViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C32676A023C0FC8900A238E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32676B723C1014E00A238E1 /* StockKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C37ED88322E2793100966595 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,41 +203,22 @@
 			isa = PBXGroup;
 			children = (
 				C3EA08E222E2D66C00F27524 /* UI */,
-				C3EA08DB22E2D63D00F27524 /* API */,
+				C3EA08DB22E2D63D00F27524 /* Managers */,
 				C37ED89322E2793200966595 /* Assets.xcassets */,
 				C37ED89522E2793200966595 /* Info.plist */,
 			);
 			path = "Stock MessagesExtension";
 			sourceTree = "<group>";
 		};
-		C3EA08D922E2D63500F27524 /* Model */ = {
+		C3EA08DB22E2D63D00F27524 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C37ED89F22E28B4400966595 /* StockPhotoService.swift */,
-				C3EA08DA22E2D63600F27524 /* StockPhoto.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C3EA08DB22E2D63D00F27524 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				C3EA08DC22E2D64100F27524 /* Services */,
-				C3EA08D922E2D63500F27524 /* Model */,
+				C3EA090122E3A6B100F27524 /* ThumbnailManager.swift */,
+				C3325B1A22E4251F00866AC3 /* AttachmentDownloader.swift */,
+				C32676B223C0FEF400A238E1 /* PersistentStockPhotoStore.swift */,
 				C3EA090322E3A6B700F27524 /* Managers */,
 			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		C3EA08DC22E2D64100F27524 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				C3325B2122E42C2600866AC3 /* ShutterstockService.swift */,
-				C3325B1F22E42C1D00866AC3 /* BigstockPhotoService.swift */,
-				C3325B2322E438A400866AC3 /* iStockPhotoService.swift */,
-				C32BE83222E4475F0042878B /* AdobeService.swift */,
-			);
-			path = Services;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		C3EA08DD22E2D65400F27524 /* Convenience */ = {
@@ -270,10 +266,6 @@
 		C3EA090322E3A6B700F27524 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C3325B1D22E42A4100866AC3 /* StockPhotoSearchManager.swift */,
-				C3EA090122E3A6B100F27524 /* ThumbnailManager.swift */,
-				C3325B1A22E4251F00866AC3 /* AttachmentDownloader.swift */,
-				C3F8403722E50F1F004B011F /* PersistentStockPhotoStore.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -315,6 +307,8 @@
 			buildPhases = (
 				C37ED87A22E2792F00966595 /* Resources */,
 				C37ED89B22E2793200966595 /* Embed App Extensions */,
+				C32676A023C0FC8900A238E1 /* Frameworks */,
+				C32676A123C0FC8900A238E1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,6 +316,9 @@
 				C37ED88922E2793100966595 /* PBXTargetDependency */,
 			);
 			name = Stock;
+			packageProductDependencies = (
+				C32676B623C1014E00A238E1 /* StockKit */,
+			);
 			productName = Stock;
 			productReference = C37ED87C22E2792F00966595 /* Stock.app */;
 			productType = "com.apple.product-type.application.messages";
@@ -333,6 +330,7 @@
 				C37ED88222E2793100966595 /* Sources */,
 				C37ED88322E2793100966595 /* Frameworks */,
 				C37ED88422E2793100966595 /* Resources */,
+				C32676B123C0FE9E00A238E1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,6 +368,9 @@
 				Base,
 			);
 			mainGroup = C37ED87522E2792F00966595;
+			packageReferences = (
+				C32676B523C1014E00A238E1 /* XCRemoteSwiftPackageReference "StockKit" */,
+			);
 			productRefGroup = C37ED87D22E2792F00966595 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -406,9 +407,7 @@
 			files = (
 				C32BE83722E44B6D0042878B /* ExpansionEnforcingNavigationController.swift in Sources */,
 				C37ED88F22E2793100966595 /* MessagesViewController.swift in Sources */,
-				C3EA08E322E2D6A100F27524 /* StockPhoto.swift in Sources */,
 				C3EA090222E3A6B100F27524 /* ThumbnailManager.swift in Sources */,
-				C32BE83322E4475F0042878B /* AdobeService.swift in Sources */,
 				C3EA08E122E2D66A00F27524 /* PresentationStyleManager.swift in Sources */,
 				C37ED8A222E2A79500966595 /* HeaderView.swift in Sources */,
 				C37ED8A422E2A7BC00966595 /* HeaderInputBar.swift in Sources */,
@@ -418,22 +417,17 @@
 				C3325B1022E4243900866AC3 /* SettingsViewController.swift in Sources */,
 				C3EA08F922E393F400F27524 /* StockPhotoCollectionViewCell.swift in Sources */,
 				C3325B0122E410B000866AC3 /* StockPhotoCollectionViewControllerLayout.swift in Sources */,
-				C3325B2222E42C2600866AC3 /* ShutterstockService.swift in Sources */,
 				C3325B1422E4249300866AC3 /* SearchStateController.swift in Sources */,
 				C3EA08DF22E2D65900F27524 /* HairlineView.swift in Sources */,
+				C32676B423C0FF3A00A238E1 /* PersistentStockPhotoStore.swift in Sources */,
 				C3325B1B22E4251F00866AC3 /* AttachmentDownloader.swift in Sources */,
-				C37ED8A022E28B4400966595 /* StockPhotoService.swift in Sources */,
 				C3325B1822E424F200866AC3 /* SearchIntentCoordinator.swift in Sources */,
 				C3EA08F322E2F79500F27524 /* MessageView.swift in Sources */,
 				C3F8403622E45DB4004B011F /* StockPhotoCollectionViewSectionHeader.swift in Sources */,
 				C3325B1622E424BD00866AC3 /* NoQueryViewController.swift in Sources */,
-				C3325B2422E438A400866AC3 /* iStockPhotoService.swift in Sources */,
 				C3325B0022E410AE00866AC3 /* SearchCollectionViewController.swift in Sources */,
 				C37ED8A622E2A8B900966595 /* UIView+PinEdges.swift in Sources */,
-				C3F8403822E50F1F004B011F /* PersistentStockPhotoStore.swift in Sources */,
 				C3F8403B22E6AD11004B011F /* ButtonTableViewCell.swift in Sources */,
-				C3325B2022E42C1D00866AC3 /* BigstockPhotoService.swift in Sources */,
-				C3325B1E22E42A4100866AC3 /* StockPhotoSearchManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +609,10 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RHEEZ26ZWB;
 				INFOPLIST_FILE = Stock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ayden.ios.Stock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -631,6 +629,10 @@
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RHEEZ26ZWB;
 				INFOPLIST_FILE = Stock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.ayden.ios.Stock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -669,6 +671,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C32676B523C1014E00A238E1 /* XCRemoteSwiftPackageReference "StockKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:aydenp/StockKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C32676B623C1014E00A238E1 /* StockKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C32676B523C1014E00A238E1 /* XCRemoteSwiftPackageReference "StockKit" */;
+			productName = StockKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C37ED87622E2792F00966595 /* Project object */;
 }

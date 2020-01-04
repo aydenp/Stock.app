@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StockKit
 
 class SearchCollectionViewController: StockPhotoCollectionViewController {
     private let loadingView = UIActivityIndicatorView(style: .gray), noItemsMessageView = MessageView(title: "No items found")

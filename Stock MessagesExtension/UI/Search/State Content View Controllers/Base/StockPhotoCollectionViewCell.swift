@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StockKit
 
 class StockPhotoCollectionViewCell: UICollectionViewCell {
     private var imageView = UIImageView()
