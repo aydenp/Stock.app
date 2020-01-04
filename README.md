@@ -2,7 +2,7 @@
 
 Not that kind.
 
-Quickly search stock photos from Messages. Ready out of the box. Built using watermarked demo image APIs, for added effect.
+A new way to communicate: quickly search stock photos from up to four sources straight from Messages. Ready out of the box. Built using watermarked demo image APIs, for added effect.
 
 ![Screenshots of Stock](/Assets/Screenshots.png)
 
